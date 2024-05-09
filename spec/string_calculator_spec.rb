@@ -5,5 +5,10 @@ RSpec.describe StringCalculator do
     string_calculator = StringCalculator.new
     expect(string_calculator).to be_kind_of(StringCalculator)
   end
+
+  it 'has a add method' do
+    string_calculator = StringCalculator.new
+    expect(string_calculator).to respond_to(:add)
+  end
   
 end
