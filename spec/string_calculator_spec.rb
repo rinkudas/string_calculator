@@ -28,6 +28,12 @@ RSpec.describe StringCalculator do
         expect(string_calculator.add('1,5')).to eq 6
       end
     end
+
+    context 'when input string has any amount of numbers' do
+      it 'should return the sum of all numbers' do
+        expect(string_calculator.add('1,5,7,9')).to eq 22
+      end
+    end
   end
   
 end
