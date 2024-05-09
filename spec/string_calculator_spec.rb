@@ -1,3 +1,4 @@
+require 'string_calculator'
 RSpec.describe StringCalculator do
 
   it 'creates a string_calculator class' do
