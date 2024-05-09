@@ -41,6 +41,12 @@ RSpec.describe StringCalculator do
       end
     end
 
+    context 'when input string has delimeters side by side' do
+      it 'raise invalid error' do
+        expect(string_calculator.add('1,\n')).to eq 'Invalid'
+      end
+    end
+
     context 'when input string has different delimeter' do
       it 'should return the sum of all numbers' do
         expect(string_calculator.add('//;\n1;2')).to eq 3
